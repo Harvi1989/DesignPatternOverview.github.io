@@ -1,5 +1,4 @@
-Here you can say lots of fun things about your site.
-
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Design patterns are typical solutions to common problems
+in software design. Each pattern is like a blueprint
+that you can customize to solve a particular
+design problem in your code.
