@@ -1,12 +1,18 @@
+## Strategy Pattern
+
 Strategy is a behavioral design pattern that turns a set of behaviors into objects and makes them interchangeable inside original context object.
 
-The original object, called context, holds a reference to a strategy object. The context delegates executing the behavior to the linked strategy object. In order to change the way the context performs its work, other objects may replace the currently linked strategy object with another one.
+The original object, called context, holds a reference to a strategy object. The context delegates executing the behavior to the linked strategy object. 
+
+---
+
+![StrategyPatternUMLDiagram](https://github.com/Harvi1989/DesignPatternOverview.github.io/assets/78693440/717cb470-cefc-4da7-bd1c-f8deaa160da0)
 
 
-
-// The Context defines the interface of interest to clients.
+```.cs
     class Context
     {
+        // The Context defines the interface of interest to clients.
         // The Context maintains a reference to one of the Strategy objects. The
         // Context does not know the concrete class of a strategy. It should
         // work with all strategies via the Strategy interface.
@@ -15,15 +21,8 @@ The original object, called context, holds a reference to a strategy object. The
         public Context()
         { }
 
-        // Usually, the Context accepts a strategy through the constructor, but
-        // also provides a setter to change it at runtime.
+        // Usually, the Context accepts a strategy through the constructor
         public Context(IStrategy strategy)
-        {
-            this._strategy = strategy;
-        }
-
-        // Usually, the Context allows replacing a Strategy object at runtime.
-        public void SetStrategy(IStrategy strategy)
         {
             this._strategy = strategy;
         }
@@ -101,3 +100,4 @@ The original object, called context, holds a reference to a strategy object. The
             context.DoSomeBusinessLogic();
         }
     }
+```
