@@ -2,7 +2,11 @@
 # Observer Pattern
 Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
 
+---
+![ObserverPatternUMLDiagram](https://github.com/Harvi1989/DesignPatternOverview.github.io/assets/78693440/f3e970d0-863e-4ff6-aed9-d00a62e77b75)
 
+
+```.cs
 public interface IObserver
     {
         // Receive update from subject
@@ -116,3 +120,4 @@ public interface IObserver
             subject.SomeBusinessLogic();
         }
     }
+```
