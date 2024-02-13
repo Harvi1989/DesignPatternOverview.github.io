@@ -5,7 +5,7 @@ Decorator is a structural design pattern that lets you attach new behaviors to o
 ---
 ![DecoratorPatternUMLDiagram](https://github.com/Harvi1989/DesignPatternOverview.github.io/assets/78693440/fd97b673-1a4d-4dbd-a7e8-7b472a405923)
 
-```.cs
+```.tsql
 // The base Component interface defines operations that can be altered by
     // decorators.
     public abstract class Component
