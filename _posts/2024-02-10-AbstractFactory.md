@@ -8,10 +8,7 @@ Abstract Factory defines an interface for creating all distinct products but lea
 
 
 ```.cs
-using System;
 
-namespace RefactoringGuru.DesignPatterns.AbstractFactory.Conceptual
-{
     // The Abstract Factory interface declares a set of methods that return
     // different abstract products. These products are called a family and are
     // related by a high-level theme or concept. Products of one family are
@@ -165,7 +162,6 @@ namespace RefactoringGuru.DesignPatterns.AbstractFactory.Conceptual
             new Client().Main();
         }
     }
-}
 ```
 
 
